@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.menu{width: 100%;height: 300px;margin: auto;background-image: url("../图片/xdg1.jpg");
+	background-size: 1350px 300px;background-repeat: no-repeat;}
+.c5{font-weight: bold;
+	float:left;margin:18px 25px 0 0;padding-left:3px;color: #000000;}
+#nav_n{font-size: 1.8em;margin-right: 30px;}
+
+.d1{width: 1300px;height: 296px;border: #48486B 2px dashed;
+			border-radius: 10px;background-color: #fffee7;margin: auto;}
+.dd{margin: auto;height: 170px;width: 1200px;}
+h1{text-align: center;}
+.c4{width: 200px;height: 150px;display: block;border: solid #e4e8ff 2px;border-radius: 10px 60px;}
+.c3{display: inline;float: left;padding: 5px;
+	margin: 5px 5px -2px 5px;text-align: center;color: #000000;
+	border: #48486b dashed 2px;border-radius: 10px 10px 0 0;}
+.jd{overflow: hidden;padding-left: 0px;}
+c3:first-child {border-radius: 0 10px 0 10px;margin-left: -2px;}
+c3:last-child {border-radius: 10px 0 10px 0;margin-right: -2px;}
+c4:hover {opacity: 0.6;}
+.d3{width: 1300px;height: 250px;padding: 10px;margin: 10px;border: solid 2px black;}
+.c1{padding: 10px;float: left;width: 100px;height: 150px;}
+.c3:first-child{border-radius: 0 10px 0 10px;margin-left: 5px;}
+.c3:last-child{border-radius: 10px 0 10px 0;margin-right: 5px;}
+.c4:hover{opacity: 0.6;}
+.sp{height: 500px;width: 1200px;margin: auto;}
+.ss{margin:auto;}
+
+.c4 {
+    width: 200px;
+    height: 150px;
+    display: block;
+    border: solid #e4e8ff 2px;
+    border-radius: 10px 60px;
+    overflow: hidden; 
+    position: relative; 
+    transition: transform 0.5s ease;
+}
+
+.c4:hover {
+    transform: scale(1.2);
+    opacity: 0.6;
+}
