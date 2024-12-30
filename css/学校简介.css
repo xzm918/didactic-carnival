@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu{width: 1300px;height: 150px;}
+.c3{font-weight: bold;
+	float:left;margin:18px 25px 0 0;
+	padding-left:3px;color:aliceblue;}
+#nav_n{font-size: 1.8em;margin-right: 30px;}
+
+.d1{width: 1300px;height: 250px;padding: 10px;margin: 10px;
+	border: solid 2px black;}
+		.c2{padding: 10px;float: left;width: 100px;height: 150px;}
+		.c1{text-indent: 2em;color: aliceblue;}
+body{
+	background-image: url( "../图片/xuexiao.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{color: aliceblue;}
+loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

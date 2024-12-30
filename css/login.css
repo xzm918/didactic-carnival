@@ -1,0 +1,198 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+	color: rgba(166,155,176,1.00);
+	overflow: hidden;
+}
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../图片/szg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: scale(1.05);
+}
+.back::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); 
+    position: fixed;
+}
+.back:hover::before{
+    backdrop-filter: none;
+}
+
+.log {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 500px;
+	min-height: 300px;
+	margin-top: 50px;
+	background-color: rgba(191,165,197,0.70);
+	overflow: hidden;
+	border-radius: 10px;
+	backdrop-filter: blur(5px);
+	box-shadow: 0 0 10px rgba(115,57,135,0.80);
+}
+
+.logtitle{
+    font-size: 40px;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg , rgba(98, 201, 248,0.6),rgba(243, 111, 255, 0.6),rgba(247, 129, 129, 0.6),rgba(241, 239, 104, 0.6),rgba(117, 226, 84, 0.6),rgba(98, 201, 248,0.6));
+    background-size: 800%;
+    animation: gradient 30s infinite linear;
+    color: transparent;
+    line-height: 100px;
+}
+
+.logbody .txt{
+    border: none;
+    border-bottom: 1px solid rgba(18, 21, 32, 0.7);
+    background: transparent;
+    transition: 0.3s;
+    height: 30px;
+    padding-top: 10px;
+}
+.logbody .txt:hover{
+    transform: scaleX(1.1);
+}
+
+.logbody .txt:focus{
+    outline: none;
+    border-bottom:  1px solid rgba(137, 160, 245, 0.7);
+    color: rgba(137, 160, 245, 0.7);
+}
+
+.logbody .sub{
+    width: 80%;
+    height: 45px;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(86, 116, 156,0.8);
+    font-size: 16px;
+    font-family: "幼圆";
+    color: rgb(180, 216, 233);
+}
+.logbody .sub:hover{
+    background-color: rgba(118, 155, 202, 0.8);
+    box-shadow: 0 0 10px rgba(118, 155, 202, 0.8);
+}
+
+.ykbt{
+    margin-top: 20px;
+    margin-left: 70%;
+    border: none;
+    background-color: transparent;
+}
+.ykbt:hover{
+    color: rgb(64, 160, 216);
+}
+
+@keyframes gradient{
+    100%{
+        background-position: -800% 0%;
+    }
+}
+
+:root {
+    --color2: #56d5fc;
+    --color4: #def700;
+    --color6: #fa3195;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';
+}
+
+.clock_box {
+    position: relative;
+    width: 380px;
+    height: 80px;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, var(--color2), var(--color4), var(--color6));
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: animate 4s linear infinite;
+}
+
+.clock_box::after, .clock_box::before {
+    position: absolute;
+    content: "";
+    /* 集成父级样式 */
+    background-image: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    filter: blur(15px);
+}
+
+.clock_box::before {
+    filter: blur(100px);
+}
+
+.clock {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    background-color: #2b2a2a;
+    border-radius: 8px;
+    /* 居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock p {
+    font-size: 50px;
+    font-weight: bold;
+    color: transparent;
+    letter-spacing: 2px;
+    background-image: linear-gradient(135deg, var(--color2), var(--color4), var(--color6));
+    /* text不是通用样式属性值 */
+    background-clip: text;
+    /* 这个是chrome */
+    -webkit-background-clip: text;
+}
+
+@keyframes animate {
+    100% {
+        /* 色相变化 */
+        filter: hue-rotate(360deg);
+    }
+}#log #logbody #ykbt {
+	color: #A5A0A0;
+	border-radius: 8px;
+	background-color: #D0C8C8;
+}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.menu{width: 1300px;height: 300px;margin: auto;background-image: url(../图片/xdg1.jpg);
+	background-size: 1350px 300px;background-repeat: no-repeat;}
+.c3{font-weight: bold;
+	float:left;margin:18px 25px 0 0;
+	padding-left:3px;color:#000000;}
+#nav_n{font-size: 1.8em;margin-right: 30px;}
+
+.d1{width: 1300px;height: 800px;
+	padding: 10px;margin: 10px;
+	border: solid 2px black;
+	}
+.c2{padding: 10px;float: left;width: 100px;height: 150px;}
+.c1{text-indent: 2em;color: #000000;}
+h1{color: #000000;}.d1 {
+	height: auto;
+	width: auto;
+}
+@keyframes cardEnter {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.d1 {
+    width: 1300px;
+    height: auto;
+    padding: 10px;
+    margin: 10px auto;
+    border: solid 2px black;
+    border-radius: 10px;
+    position: relative;
+    animation: cardEnter 1s ease forwards;
+}
+
+.d1:nth-child(1) { animation-delay: 2s; }
+.d1:nth-child(2) { animation-delay: 3s; }
+.d1:nth-child(3) { animation-delay: 1.5s; }
